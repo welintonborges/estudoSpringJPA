@@ -3,6 +3,7 @@ package com.springjpa.estudandospringjpa.config;
 import com.springjpa.estudandospringjpa.services.DBService;
 import com.springjpa.estudandospringjpa.services.EmailService;
 import com.springjpa.estudandospringjpa.services.MockEmailService;
+import com.springjpa.estudandospringjpa.services.SmtpEmailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -22,8 +23,13 @@ public class TestConfig {
         dbService.instantiaTestDataBase();
         return true;
     }
+//    @Bean
+//    public EmailService emailService(){
+//        return  new MockEmailService();
+//    }
     @Bean
     public EmailService emailService(){
-        return  new MockEmailService();
+        return  new SmtpEmailService();
     }
+
 }
