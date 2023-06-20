@@ -293,3 +293,7 @@ Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range:
 2023-06-19 17:52:53 jdbc[13]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ID" not found; SQL statement:
 SELECT * FROM ID  PEDIDO [42102-214]
+2023-06-19 23:04:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-214]
+2023-06-19 23:10:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-214]
